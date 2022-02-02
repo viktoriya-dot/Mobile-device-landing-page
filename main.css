@@ -1,0 +1,278 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+
+}
+html {
+    font-size: 14px;
+    width: 100%;
+    min-width: 400px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: Manrope;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.img {
+    object-fit: cover;
+}
+.logo {
+    display: inline-block;
+    padding: 0.8rem;
+    margin: 0 25% 0 0;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+}
+header {
+    background-color: #ee5166;
+    background-image: linear-gradient(315deg, #ee5166 0%, #f08efc 74%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.header-box {
+    max-width: 95%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 800;
+}
+.menu a {
+    margin: 1rem;
+}
+.menu a:hover {
+    color: white;
+}
+.banner {
+    display: flex;
+    flex-grow: row nowrap;
+}
+.banner-heading {
+    flex: 1;
+    padding-left: 1rem;
+    font-size: 2rem;
+    align-content: center;
+    padding-top: 10%;
+    margin-right: 4rem;
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+.banner-img, .banner-heading {
+    flex: 1 1 50%;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.banner-heading p {
+    font-size: 1.5rem;
+}
+
+.about {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.about h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3.5rem;
+}
+.about p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.feachure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.feature1,
+.feature2,
+.feature3,
+.feature4,
+.feature5,
+.feature6 {
+    width: 25%;
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.feachure h5 {
+    font-size: 1.1rem;
+}
+.feachure p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.stat {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+.stat-box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+.stat1, .stat2 {
+    flex: 1;
+}
+.stat1 {
+    margin-right: 2rem;
+}
+.stat1 h3 {
+    font-size: 2rem;
+}
+.stat2 {
+    display: flex;
+    flex-flow: row wrap;
+}
+.stat2 div {
+    width: 50%;
+}
+.stat-icon1,
+.stat-icon2,
+.stat-icon3,
+.stat-icon4 {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+.stat-icon1 {
+    background: url(img/Icon-3.svg) no-repeat;
+}
+.stat-icon2 {
+    background: url(img/Icon-2.svg) no-repeat;
+}
+.stat-icon3 {
+    background: url(img/Icon-1.svg) no-repeat;
+}
+.stat-icon4 {
+    background: url(img/Icon.svg) no-repeat;
+}
+.download {
+    width: 100%;
+    background-color: #CE2E2E;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.download h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.download-box {
+    width: 80%;
+    display: flex;
+}
+.download-text {
+    width: 45%;
+    margin-right: 5rem;
+}
+.get-the-app {
+    margin-top: 4rem;
+    font-weight: bold;
+}
+.iphone1 {
+    position: absolute;
+    left: 50.31%;
+    top: -20%;
+    margin-right: 2rem;
+}
+.iphone2 {
+    position: absolute;
+    left: 65.31%;
+    top: 15%;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.footer-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bages {
+    display: flex;
+    flex-direction: column;
+    margin-left: -5rem;
+}
+.bage-1 {
+    margin: 0.8rem 0;
+}
+
+/* ------------Responsive--------- */
+@media screen and (max-width: 760px) {
+    section, footer {
+        font-weight: bold;
+    }
+    .logo {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-right: 2%;
+    }
+    .feachure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature1,
+    .feature2,
+    .feature3,
+    .feature4,
+    .feature5,
+    .feature6 {
+        flex: 1 1 95%;
+        align-items: center;
+        margin: 1rem;
+    }
+    .about {
+        width: 80%;
+    }
+    .stat-box {
+        flex-direction: column;
+        flex: 95%;
+        justify-content: center;
+        margin: 2rem;
+    }
+    .stat1 {
+        flex:1 1 100%;
+        margin: 0;
+    }
+    .download {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .get-the-app {
+        font-weight: bold;
+    }
+}
+
